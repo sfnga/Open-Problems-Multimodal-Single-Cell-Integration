@@ -1,7 +1,7 @@
 # Open Problems - Multimodal Single-Cell Integration
 Описание и код решения соревнования [Open Problems - Multimodal Single-Cell Integration](https://www.kaggle.com/competitions/open-problems-multimodal)
 
-Результат: 81/1220 (7%)
+**Результат**: 81/1220 (7%)
 
 ## Описание задачи
 По данным клеток, собранных от 4 доноров предсказать
@@ -10,6 +10,7 @@
 
 Фактически, в рамках соревнования предполагалось решить 2 задачи
 
+## Метрика
 ## Данные 
 
 ## Решение
