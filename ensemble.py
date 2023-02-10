@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import os
 from tqdm import tqdm
 from scipy.optimize import minimize
 from sklearn.model_selection import GroupKFold
@@ -33,7 +32,7 @@ def get_best_weights(oofs, labels, X, meta):
     weight_list = []
     weights = np.array([1 / len(oofs) for x in range(len(oofs) - 1)])
 
-    kf = GroupKFold(n_splits=2)
+    kf = GroupKFold(n_splits=3)
     for fold, (train_idx,
                valid_idx) in enumerate(kf.split(X.values, groups=meta.day)):
         if fold != 1:
